@@ -79,5 +79,6 @@ test('Verify the results are correct after filtering a computer', async ({page})
      //await expect(filterMessage).toHaveText(numberOfComputerLinks.toString() + 'computers found');
      await expect(filterMessage).toHaveText(`${numberOfComputerLinks} computers found`);
      await expect(filterMessage).toContainText(`${numberOfComputerLinks}`);
+     console.log("Nesto e dodadeno");
     
 })
