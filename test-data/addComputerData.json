@@ -1,0 +1,21 @@
+[
+    {
+        "computerName":"Computer 1",
+        "introduced":"1999-01-01",
+        "discontinued":"2000-01-01",
+        "company":"Netronics"
+    },
+
+    {
+        "computerName":"Computer 2",
+        "introduced":"2003-02-02",
+        "discontinued":"2004-02-02",
+        "company":"IBM"
+    },
+    {
+        "computerName":"Computer 3",
+        "introduced":"2005-02-02",
+        "discontinued":"2006-02-02",
+        "company":"Sony"
+    }
+]
