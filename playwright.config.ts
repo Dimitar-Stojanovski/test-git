@@ -26,7 +26,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
+     //baseURL: 'www.google.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -35,8 +35,20 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      name: 'computer project',
+      use: { ...devices['Desktop Chrome'],
+        baseURL:"https://computer-database.gatling.io/computers"
+       },
+      testIgnore :/magentoTests\/.*\.spec\.ts/,
+    },
+
+    {
+      name: 'magento',
+      testMatch: /magentoTests\/.*\.spec\.ts/,
+      use: { ...devices['Desktop Chrome'], 
+        baseURL:"https://magento.softwaretestingboard.com",
+      },
+      
     },
 
     // {

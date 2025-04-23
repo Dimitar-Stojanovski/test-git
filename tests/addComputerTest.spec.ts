@@ -2,7 +2,7 @@ import {expect, test} from '@playwright/test';
 import addComputerData from '../test-data/addComputerData.json';
 
 test.beforeEach(async ({page})=>{
-    await page.goto("https://computer-database.gatling.io/computers");
+    await page.goto("/");
 })
 
 test("Verify page title", async ({page})=>{

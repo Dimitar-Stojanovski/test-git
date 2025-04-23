@@ -5,6 +5,7 @@ export class HomePage{
     readonly addComputerBtn:Locator
     readonly sucessMsgBanner:Locator
     readonly computer:Locator
+    
 
     constructor(page: Page){
         this.page = page;
