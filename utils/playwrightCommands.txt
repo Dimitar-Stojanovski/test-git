@@ -1,0 +1,38 @@
+# Playwright CLI Commands Cheatsheet
+
+# Installation
+npm init playwright@latest       # Initialize a new Playwright project
+npm install -D @playwright/test # Install Playwright dependencies
+
+# Running Tests
+npx playwright test                     # Run all tests
+npx playwright test example.spec.ts     # Run a specific test file
+npx playwright test -g "test title"     # Run tests with title matching the pattern
+npx playwright test --headed            # Run tests in headed mode
+npx playwright test --project=chromium  # Run tests only in Chromium
+npx playwright test --debug             # Run tests in debug mode
+npx playwright test --workers=1         # Run tests in single worker
+
+# Test Generation
+npx playwright codegen                  # Start codegen mode
+npx playwright codegen example.com      # Start codegen and navigate to URL
+
+# Browsers
+npx playwright install                  # Install all supported browsers
+npx playwright install chromium        # Install specific browser
+
+# Report Related
+npx playwright show-report             # Show HTML test report
+npx playwright show-trace trace.zip    # Show trace viewer
+
+# Configuration
+npx playwright test --list             # List all tests
+npx playwright test --config=path      # Use custom config file
+npx playwright test --update-snapshots # Update screenshots
+
+# UI Mode
+npx playwright test --ui              # Run tests in UI mode
+
+# Recording
+npx playwright codegen --viewport-size=800,600  # Record with specific viewport
+npx playwright codegen --device="iPhone 11"     # Record with device preset

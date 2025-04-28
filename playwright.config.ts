@@ -51,6 +51,16 @@ export default defineConfig({
       
     },
 
+    {
+      name: 'demoQa',
+      testMatch: /demoQaTests\/.*\.spec\.ts/,
+      use: { ...devices['Desktop Chrome'], 
+        baseURL:"https://demoqa.com/",
+        viewport:{width:1440,height:900}
+      },
+      
+    },
+
     // {
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
