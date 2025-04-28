@@ -27,4 +27,9 @@ export class HomePage{
         //await this.computer.nth(0).click()
     }
 
+    async clickComputer() {
+        await this.computer.click();
+    }
+
+    
 }

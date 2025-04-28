@@ -1,7 +1,7 @@
 import {expect, test} from '@playwright/test';
-import { HomePage } from '../page-objects/homePage';
-import { CreateComputerPage } from '../page-objects/createComputerPage';
+import {CreateComputerPage} from '../page-objects/computerGatlingPages/createComputerPage.ts';
 import addComputerData from '../test-data/addComputerData.json';
+import { HomePage } from '../page-objects/computerGatlingPages/homePage';
 
 var homePage:HomePage
 var createComputerPage:CreateComputerPage
